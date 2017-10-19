@@ -5,7 +5,10 @@
 </head>
 <body>
     <p id="status"></p>
-    <p id="logout" style="visibility: hidden"><a href="#" onclick="localStorage.clear(); location.href = '/'">Log out locally (clear local storage)</a></p>
+    <div id="logout" style="visibility: hidden">
+        <p></p><a href="#" onclick="localStorage.clear(); location.href = '/'">Log out locally (clear local storage)</a></p>
+        <p><a href="#" onclick="signoff()">Sign off from MIDAS-SSO</a></p>
+    </div>
     <script src="https://cdn.auth0.com/js/auth0/8.8/auth0.js"></script>
     <script src="auth0-variables.js"></script>
     <script src="index.js"></script>
