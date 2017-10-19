@@ -39,7 +39,7 @@ function saveAuthResult (result) {
 
 function renew () {
     auth0js.renewAuth({
-        redirectUri: 'http://localhost:3000/callback.html',
+        redirectUri: REDIRECT_URL,
         usePostMessage: true
     }, function (err, result) {
         if (err || (result && result.error)) { // For auth0.js version 8.8, the error shows up at result.error

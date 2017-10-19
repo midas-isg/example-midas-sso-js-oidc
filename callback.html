@@ -6,7 +6,7 @@
     <script src="auth0-variables.js"></script>
     <script>
     auth0js.parseHash(window.location.hash, function (err, response) {
-        parent.postMessage(err || response, 'http://localhost:3000');
+        parent.postMessage(err || response, baseUrl());
     });
     </script>
 </head>
