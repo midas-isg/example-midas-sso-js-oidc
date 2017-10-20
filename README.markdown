@@ -1,3 +1,15 @@
+# MIDAS SSO example with OIDC using only JavaScript
+An example of website serving static files using only JavaScript on python with SimpleHTTPServer, midas-sso and Auth0. For live demo, visit https://midas-isg.github.io/example-midas-sso-js-oidc/.
+
+
+## Hook up to midass-sso
+
+This example shows how to hook up to midass-sso for the logged in user. After user signs up to midas-sso via MIDAS Accounts, the user will automatically get `ISG_USER` role. The example also demonstrates how to fetch user information from Auth0 and put into local storage for further useage.
+
+
+
+The below is the original information from auth0-samples/oidc-sso-sample.
+
 # OIDC Single Sign-on Sample
 
 ## Prerequisites
