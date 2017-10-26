@@ -65,12 +65,12 @@ function signOnViaMidasAccounts() {
 
 function signoff() {
     localStorage.clear();
-    window.location.href = toMidasAccountsUrl('/logout');
+    window.location.href = toMidasAccountsUrl('/signoff', 'You have been signed off. You may sign on again.');
 }
 
 function toMidasAccountsUrl(endpoint, message, title) {
     title = title || "OIDC SSO Example";
-    message = message || "Please login to use the services";
+    message = message || "Please sign on to use the services";
     return MIDAS_ACCOUNTS_URL + endpoint + '?returnToUrl='
         + encodeURIComponent(window.location) + '&title=' + title + '&message=' + message;
 }
